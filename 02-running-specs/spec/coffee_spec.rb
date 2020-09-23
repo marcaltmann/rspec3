@@ -18,5 +18,13 @@ RSpec.describe 'A cup of coffee' do
     it 'costs 1.25€' do
       expect(coffee.price).to eq(1.25)
     end
+
+    it 'is lighter in color' do
+      expect(coffee.color).to be(:light)
+    end
+
+    it 'is cooler than 200 degrees Fahrenheit' do
+      expect(coffee.temperature).to be < 200.0
+    end
   end
 end
